@@ -1,7 +1,7 @@
 import React from 'react'
 import DashCard from '../../components/DashCard'
 import DashBarChart from '../../components/BarChart'
-import DashDatatable from '../../components/Datatable'
+import DashDatatable from './Datatable'
 const Dashboard = () => {
   return (
     <div div className='m-5 p-5'>

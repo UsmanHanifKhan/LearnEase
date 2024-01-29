@@ -1,6 +1,7 @@
 import React from 'react'
 import DataTable, { createTheme } from 'react-data-table-component';
-import DummyData from './DummyData';
+import DummyData from '../../components/DummyData';
+import avatar from '../../assets/images/avatar.png'
 const DashDatatable = () => {
     const columns = [
         {
@@ -14,7 +15,7 @@ const DashDatatable = () => {
 
         {
             name: 'Customer',
-            selector: row => <div className='flex gap-2'><img src={row.image} alt="" /> <h1>{row.name}</h1></div>,
+            selector: row => <div className='flex gap-2 items-center'><img className='w-10' src={avatar} alt="" /> <h1 className=''>{row.name}</h1></div>,
         },
         {
             name: 'Status',
@@ -26,12 +27,14 @@ const DashDatatable = () => {
         },
         {
             name: 'Action',
-            selector:row=> <button >view more</button>
+            selector:row=> <button className='p-1 border-2 rounded-md hover:border-PrimaryColor group'><svg class="w-6 h-6 text-gray-300 group-hover:text-PrimaryColor dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6 12h0m6 0h0m6 0h0"/>
+          </svg></button>
         }
     ];
   return (  
  <DataTable
-            title="Movie List"
+            title="Invoices List"
 			columns={columns}
 			data={DummyData}
             pagination
