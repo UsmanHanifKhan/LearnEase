@@ -4,6 +4,7 @@ import Customer from "../pages/Customer";
 import Dashboard from "../pages/dashboard/Index";
 import Clients from "../pages/clients/Index";
 import Invoices from "../pages/invoices/Index";
+import AddClient from "../pages/clients/AddClient";
 const Routers = () => {
 
   return (
@@ -23,6 +24,14 @@ const Routers = () => {
             element={
               <Layout>
                 <Clients />
+              </Layout>
+            }
+          />
+          <Route
+            path="/clients/addclient"
+            element={
+              <Layout>
+                <AddClient />
               </Layout>
             }
           />
