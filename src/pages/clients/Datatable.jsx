@@ -34,7 +34,7 @@ const ClientDatatable = () => {
     ];
   return (  
  <DataTable
-            title="Invoices List"
+        
 			columns={columns}
 			data={DummyData}
             pagination
