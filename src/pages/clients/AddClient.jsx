@@ -131,28 +131,28 @@ const AddClient = () => {
             </div>
         </div>
 
-        <div className='my-5 w-full'>
+        <div className='my-5 w-full border-b-2 border-dashed'>
         <table className=" w-full">
-  <thead className='bg-SecondaryColor'>
+  <thead className='bg-SecondaryColor text-white'>
     <tr className='text-left'>
-      <th className='ml-2'>Service</th>
-      <th className='ml-2'  >Description</th>
-      <th className='ml-2'>Qty</th>
-      <th >Price</th>
+      <th className='pl-2'>Service</th>
+      <th className='pl-2'  >Description</th>
+      <th className='pl-2'>Qty</th>
+      <th className='pl-2'>Price</th>
     </tr>
   </thead>
   <tbody className=''>
     <tr className=''>
-    <td className='w-[30%]'>
+    <td className='w-[30%] px-2'>
         <input className='mt-2 ring-1 w-full shadow ring-gray-200 rounded  focus:ring-PrimaryColor focus:outline-none hover:ring-PrimaryColor px-2 py-1 ' placeholder='www.abc.com' type="text" name="Web" id="Web" />
 </td>
-<td  className='w-[30%]' >
+<td  className='w-[30%] px-2' >
         <input className='mt-2 ring-1 w-full shadow ring-gray-200 rounded  focus:ring-PrimaryColor focus:outline-none hover:ring-PrimaryColor px-2 py-1' placeholder='www.abc.com' type="text" name="Web" id="Web" />
 </td>
-<td className='w-[10%]' >
+<td className='w-[10%] px-2' >
         <input className='mt-2 ring-1 w-full shadow ring-gray-200 rounded  focus:ring-PrimaryColor focus:outline-none hover:ring-PrimaryColor px-2 py-1' placeholder='www.abc.com' type="text" name="Web" id="Web" />
 </td>
-<td  className='w-[30%]'>
+<td  className='w-[30%] px-2'>
         <input className='mt-2 ring-1 w-full shadow ring-gray-200 rounded  focus:ring-PrimaryColor focus:outline-none hover:ring-PrimaryColor px-2 py-1' placeholder='www.abc.com' type="text" name="Web" id="Web" />
 </td>
     </tr>   
@@ -160,8 +160,30 @@ const AddClient = () => {
  
 </table>
 <div className='w-full flex justify-end my-5 '>
-    <button className='py-2 px-5 bg-PrimaryColor w-50 rounded-lg text-white hover:bg-white hover:border-2 hover:border-PrimaryColor hover:text-PrimaryColor'> Add More</button>
+    <button className='py-2 px-5 border-2 border-transparent bg-PrimaryColor w-50 rounded-lg text-white hover:bg-white hover:border-2 hover:border-PrimaryColor hover:text-PrimaryColor'> Add More</button>
   </div>
+        </div>
+
+        <div className='my-5 w-full flex justify-between'>
+            <h1 className='text-gray-400'>
+                All payments are in USD, All Fee  is upto buyer
+            </h1>
+            <div>
+            <div className='flex my-2 items-center justify-end text-lg'>
+                    <label htmlFor="Web" className='text-gray-500' >Subtotal: </label>
+                    <h1 className='font-semibold ml-2'>2500</h1>
+                </div>
+                <div className='flex my-2 items-center justify-end text-lg  '>
+                    <label htmlFor="Web" className='text-gray-500'>Tax:</label>
+                    <input className='ring-1 w-14 shadow ring-gray-200 rounded  focus:ring-PrimaryColor focus:outline-none hover:ring-PrimaryColor px-2 py-1 ml-2' placeholder='10%' type="text" name="Web" id="Web" />
+                </div> 
+                <div className='flex my-2 items-center justify-end text-lg'>
+                    <label htmlFor="Web" className='text-gray-500' >Total: </label>
+                    <h1 className='font-semibold ml-2'>2500</h1>
+                </div>
+                
+            </div>
+
         </div>
     </div>
     </div>
