@@ -68,6 +68,7 @@ const SideBar = () => {
               <NavLink
                 onClick={closeSidebar}
                 to="/dashboard"
+                activeClassName="active"
                 className={`flex items-center p-2  text-gray-200 rounded-lg hover:text-SecondaryColor hover:bg-gray-100 group`}
               >
                 <svg

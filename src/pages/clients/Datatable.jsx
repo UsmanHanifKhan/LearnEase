@@ -2,28 +2,24 @@ import React from 'react'
 import DataTable, { createTheme } from 'react-data-table-component';
 import DummyData from '../../components/DummyData';
 import avatar from '../../assets/images/avatar.png'
+import DummyClients from '../../components/DummyClients';
 const ClientDatatable = () => {
     const columns = [
         {
-            name: 'Number',
-            selector: row => row.id,
-        },
-        {
-            name: 'Date',
-            selector: row => row.date,
-        },
-
-        {
-            name: 'Customer',
+            name: 'Name',
             selector: row => <div className='flex gap-2 items-center'><img className='w-10' src={avatar} alt="" /> <h1 className=''>{row.name}</h1></div>,
         },
         {
-            name: 'Status',
-            selector: row => <div className={`px-2 text-center w-24 ${row.status==="paid"&&"border-green-600 text-green-600"||"border-red-600 text-red-600"} py-1 border-2 rounded  font-semibold`}> {row.status}</div> 
+            name: 'Phone no',
+            selector: row => row.phone_number,
         },
         {
-            name: 'Amount',
-            selector: row => row.amount,
+            name: 'Address',
+            selector: row => row.address,
+        },
+        {
+            name: 'Gender',
+            selector: row => row.gender,
         },
         {
             name: 'Action',
@@ -36,7 +32,7 @@ const ClientDatatable = () => {
  <DataTable
         
 			columns={columns}
-			data={DummyData}
+			data={DummyClients}
             pagination
 		/>
   )

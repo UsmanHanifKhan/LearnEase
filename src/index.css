@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;/* print.css */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #invoice-details, #invoice-details * {
+    visibility: visible;
+  }
+  #invoice-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    
+  }
+  @page {
+    size: A4; /* Set the paper size */
+    margin: 0; /* Remove default margins */
+  }
+}
+

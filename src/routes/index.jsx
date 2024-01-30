@@ -5,8 +5,9 @@ import Dashboard from "../pages/dashboard/Index";
 import Clients from "../pages/clients/Index";
 import Invoices from "../pages/invoices/Index";
 import AddClient from "../pages/clients/AddClient";
+import AddInvoice from "../pages/invoices/AddInvoice";
+import InvoiceDetails from "../pages/invoices/InvoiceDetails";
 const Routers = () => {
-
   return (
     <>
       <BrowserRouter >
@@ -40,6 +41,22 @@ const Routers = () => {
             element={
               <Layout>
                 <Invoices/>
+              </Layout>
+            }
+          />
+          <Route
+            path="/invoices/addinvoice"
+            element={
+              <Layout>
+                <AddInvoice />
+              </Layout>
+            }
+          />
+          <Route
+            path="/invoices/invoicedetails"
+            element={
+              <Layout>
+                <InvoiceDetails />
               </Layout>
             }
           />
