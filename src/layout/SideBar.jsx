@@ -57,7 +57,7 @@ const SideBar = () => {
         <div className="bg-PrimaryColor h-full px-3 py-4 overflow-y-auto">
           <NavLink
             onClick={closeSidebar}
-            to="/admin/"
+            to="/dashboard"
             className="flex items-center justify-center pt-5"
           >
             <img src={logo} className="  m-auto" alt="Flowbite Logo" />
@@ -68,10 +68,10 @@ const SideBar = () => {
               <NavLink
                 onClick={closeSidebar}
                 to="/dashboard"
-                className={`flex items-center p-2  text-gray-200 rounded-lg hover:text-SecondaryColor hover:bg-gray-100 group active:bg-gray-100`}
+                className={`flex items-center p-2  text-gray-200 rounded-lg hover:text-SecondaryColor hover:bg-gray-100 group `}
               >
                 <svg
-                  className={`flex-shrink-0 w-5 h-5 text-SecondaryColor transition duration-75 group-hover:text-PrimaryColor group-active:text-PrimaryColor`}
+                  className={`flex-shrink-0 w-5 h-5 text-SecondaryColor transition duration-75 group-hover:text-PrimaryColor `}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -79,7 +79,7 @@ const SideBar = () => {
                 >
                   <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                 </svg>
-                <span className="ms-3 text-white group-hover:text-gray-500 group-active:text-gray-500 ">
+                <span className="ms-3 text-white group-hover:text-gray-500  ">
                   Dashboard
                 </span>
               </NavLink>
@@ -88,7 +88,7 @@ const SideBar = () => {
               <NavLink
                 onClick={closeSidebar}
                 to="/clients"
-                className={`flex items-center p-2  text-gray-200 rounded-lg hover:text-SecondaryColor hover:bg-gray-100 group active:bg-gray-100` }
+                className={`flex items-center p-2  text-gray-200 rounded-lg hover:text-SecondaryColor hover:bg-gray-100 group ` }
               >
                 <svg
                   className={`flex-shrink-0 w-5 h-5 text-SecondaryColor transition duration-75 group-hover:text-PrimaryColor`}
@@ -113,7 +113,7 @@ const SideBar = () => {
               <NavLink
                 onClick={closeSidebar}
                 to="/invoices"
-                className={`flex items-center p-2  text-gray-200 rounded-lg hover:text-SecondaryColor hover:bg-gray-100 group active:bg-gray-100`}
+                className={`flex items-center p-2  text-gray-200 rounded-lg hover:text-SecondaryColor hover:bg-gray-100 group `}
               >
                 <svg
                                     className={`flex-shrink-0 w-5 h-5 text-SecondaryColor transition duration-75 group-hover:text-PrimaryColor`}

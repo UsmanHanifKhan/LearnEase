@@ -21,3 +21,16 @@
   }
 }
 
+.group.active{
+  background-color: rgb(255, 255, 255);
+  color: orange !important;
+}
+
+.group.active span{
+  color: #676767 !important;
+}
+.group.active svg{
+  color: #348f6c  !important;
+}
+
+
