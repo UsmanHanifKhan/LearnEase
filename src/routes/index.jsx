@@ -9,7 +9,6 @@ import AddInvoice from "../pages/invoices/AddInvoice";
 import InvoiceDetails from "../pages/invoices/InvoiceDetails";
 const Routers = () => {
   return (
-    <>
       <BrowserRouter >
         <Routes>
           <Route
@@ -62,7 +61,6 @@ const Routers = () => {
           />
         </Routes>
       </BrowserRouter>
-    </>
   );
 };
 
