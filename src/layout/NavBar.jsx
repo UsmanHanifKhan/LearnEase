@@ -53,7 +53,7 @@ const NavBar = () => {
                   alt="user photo"
                 />
                 <span className="block text-sm text-gray-900 font-medium ms-2">
-                  Furqan
+                  Usman Khan
                 </span>
               </div>
               <div className="ms-4">

@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        PrimaryColor:"#348f6c",
-        SecondaryColor:"#e2c992",
+        PrimaryColor:"#059eda",
+        SecondaryColor:"#f6931c",
         color3rd:"#3f3d56",
         color4th:"#c0c0c0",
         cardbg:"#fdf9f3"
