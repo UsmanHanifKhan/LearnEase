@@ -1,12 +1,20 @@
-# Ignore node_modules directory
+# Node.js dependencies
 node_modules/
 
-# Ignore build output
-build/
-dist/
+# Compiled files
+*.log
+*.gz
+*.tgz
+*.zip
 
-# Ignore environment variables file
+# Environment variables
 .env
 
-# Ignore any other files or directories that are generated during development
-# Add more entries as needed
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
